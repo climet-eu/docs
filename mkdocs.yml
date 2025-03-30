@@ -1,0 +1,53 @@
+site_name: climet.eu Documentation
+repo_url: https://github.com/climet-eu
+
+strict: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - footnotes
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      use_pygments: true
+      noclasses: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - js/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+theme:
+  name: material
+  highlightjs: false
+  navigation_depth: 99
+  logo: static/favicons/esiwace.svg
+  favicon: static/favicons/favicon.ico
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - Home: index.md
+  - Online Laboratory: lab.md
+  - Online Compression Laboratory: compression.md
+
+plugins:
+  - exclude:
+      glob:
+        - requirements.txt
+  - search
+  - autorefs
