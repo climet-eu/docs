@@ -1,4 +1,5 @@
 site_name: climet.eu Documentation
+site_url: https://docs.climet.eu
 repo_url: https://github.com/climet-eu
 
 strict: true
