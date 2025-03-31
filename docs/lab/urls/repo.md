@@ -57,9 +57,9 @@
     } else {
       repo_url.style = "color: grey;";
     }
-    
+
     repo_url.innerText = `https://lab.climet.eu/${lab_version.value}/${repo_host.value}/${repo_org.value || "<org>"}/${repo_name.value || "<name>"}/${repo_ref.value || "<rev>"}${repo_path.value ? '/' : ''}${repo_path.value}`;
-    
+
     if (repo_org.value && repo_name.value && repo_ref.value) {
       if (repo_path.value) {
         repo_preview.src = `https://nbviewer.org/${repo_host.value}/${repo_org.value}/${repo_name.value}/blob/${repo_ref.value}/${repo_path.value}`;
