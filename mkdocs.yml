@@ -22,6 +22,7 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - css/nice-forms.css
 
 theme:
   name: material
@@ -32,7 +33,7 @@ theme:
   palette:
     - scheme: default
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
       toggle:
@@ -44,8 +45,11 @@ theme:
 nav:
   - Home: index.md
   - Online Laboratory:
-    - Overview: lab/index.md
-    - Special URLs: lab/urls.md
+      - Overview: lab/index.md
+      - Special URLs:
+        - Overview: lab/urls/index.md
+        - Open a git repo: lab/urls/repo.md
+        - Open a gist: lab/urls/gist.md
   - Online Compression Laboratory: compression.md
 
 plugins:

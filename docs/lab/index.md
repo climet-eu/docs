@@ -7,6 +7,11 @@ If you are familiar with [JupyterLab](https://jupyter.org/), you should feel rig
 While Pyodide already supports an extensive list of scientific Python packages, which we have contributed to, this laboratory comes with additional packages that are commonly used in the weather and climate science community, including (but not limited to) `metpy`, `cfgrib`, `earthkit`, and `xeofs`.
 
 
+## Quickly Getting Started
+
+- Open an existing [git repository][open-a-git-repository-in-the-online-laboratory] in the online lab
+- Open an existing [gist][open-a-gist-in-the-online-laboratory] in the online lab
+
 ## Getting Started
 
 To get started, go to [lab.climet.eu](https://lab.climet.eu), wait for the JupyterLab to load, and click the blue `+` button in the top left to open a new launcher and create a new Python notebook from there. After the Python kernel has initialised, you can execute Python code in the cells of the notebook.

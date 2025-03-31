@@ -4,7 +4,7 @@ The Online Laboratory for Climate Science and Meteorology, [lab.climet.eu](https
 - `https://lab.climet.eu/<version>`: opens the specified version of the lab
 - `https://lab.climet.eu/<version>/[github|gitlab]/<org>/<repo>/<branch>`: downloads the specified GitHub / GitLab repository in the specified version of the lab
 - `https://lab.climet.eu/<version>/[github|gitlab]/<org>/<repo>/<branch>/*filepath`: downloads the specified GitHub / GitLab repository in the specified version of the lab and opens the file path
-- `https://lab.climet.eu/<version>gist/[github]/<org>/<gist>/*filepath`: downloads the specified GitHub gist file and opens it in the specified version of the lab
+- `https://lab.climet.eu/<version>/gist/[github]/<org>/<gist>/*filepath`: downloads the specified GitHub gist file and opens it in the specified version of the lab
 - `https://lab.climet.eu/<version>/raw/[github]/<org>/<repo>/<branch>/*filepath`: downloads the specified file from a GitHub repository's branch and opens it in the specified version of the lab
 - `https://lab.climet.eu/<version>/raw/[github-tag]/<org>/<repo>/<tag>/*filepath`: downloads the specified file from a GitHub repository's tag and opens it in the specified version of the lab
 
