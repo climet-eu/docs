@@ -11,6 +11,7 @@ While Pyodide already supports an extensive list of scientific Python packages, 
 
 - Open an existing [git repository][open-a-git-repository-in-the-online-laboratory] in the online lab
 - Open an existing [gist][open-a-gist-in-the-online-laboratory] in the online lab
+- Open an existing [file URL][open-a-file-url-in-the-online-laboratory] in the online lab
 
 ## Getting Started
 

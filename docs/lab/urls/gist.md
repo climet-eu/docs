@@ -30,6 +30,7 @@
     <input id="gist-path" type="text" required />
     <br/><br/>
     <label>Online Laboratory URL: <a id="gist-url" target="_blank"></a></label>
+    <br/><br/>
     <label>Preview (using Jupyter nbviewer):</label>
     <iframe id="gist-preview" src="https://nbviewer.org/404.html" style="width: 100%; height: auto; aspect-ratio: 16 / 9;"></iframe>
 </div>

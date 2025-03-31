@@ -7,6 +7,7 @@ The Online Laboratory for Climate Science and Meteorology, [lab.climet.eu](https
 - `https://lab.climet.eu/<version>/gist/[github]/<org>/<gist>/*filepath`: downloads the specified GitHub gist file and opens it in the specified version of the lab
 - `https://lab.climet.eu/<version>/raw/[github]/<org>/<repo>/<branch>/*filepath`: downloads the specified file from a GitHub repository's branch and opens it in the specified version of the lab
 - `https://lab.climet.eu/<version>/raw/[github-tag]/<org>/<repo>/<tag>/*filepath`: downloads the specified file from a GitHub repository's tag and opens it in the specified version of the lab
+- `https://lab.climet.eu/<version>/raw/http/*url`: downloads the file from the specified URL and opens it in the specified version of the lab
 
 where
 
@@ -25,4 +26,5 @@ where
 - `<branch>` refers to the name of a branch in the repository
 - `<tag>` refers to the name of a tag in the repository
 - `<gist>` refers to the hash of a GitHub gist
-- `*filepath` refers to an optional path, starting from the repository root, for a file that should be opened
+- `*filepath` refers to a path, starting from the repository root, for a file that should be opened
+- `*url` refers to the URL to a file that should be downloaded

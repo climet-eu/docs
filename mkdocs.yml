@@ -47,9 +47,10 @@ nav:
   - Online Laboratory:
       - Overview: lab/index.md
       - Special URLs:
-        - Overview: lab/urls/index.md
-        - Open a git repo: lab/urls/repo.md
-        - Open a gist: lab/urls/gist.md
+          - Overview: lab/urls/index.md
+          - Open a git repo: lab/urls/repo.md
+          - Open a gist: lab/urls/gist.md
+          - Open a file via URL: lab/urls/https.md
   - Online Compression Laboratory: compression.md
 
 plugins:

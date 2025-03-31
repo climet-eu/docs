@@ -14,6 +14,7 @@
 
 - Open an existing [git repository][open-a-git-repository-in-the-online-laboratory] in the Online Laboratory for Climate Science and Meteorology
 - Open an existing [gist][open-a-gist-in-the-online-laboratory] in the Online Laboratory for Climate Science and Meteorology
+- Open an existing [file URL][open-a-file-url-in-the-online-laboratory] in the Online Laboratory for Climate Science and Meteorology
 
 ## Funding
 
