@@ -1,17 +1,15 @@
 # Online Laboratory for Climate Science and Meteorology
 
-Welcome to the **Online Laboratory for Climate Science and Meteorology**, [lab.climet.eu](https://lab.climet.eu)!
+Welcome to the documentation for the **Online Laboratory for Climate Science and Meteorology**, [lab.climet.eu](https://lab.climet.eu)!
 
-If you are familiar with [JupyterLab](https://jupyter.org/), you should feel right at home with the user interface of this lab. You can use the JupyterLab interface at [/lab](https://lab.climet.eu/latest/lab) and a REPL interface at [/repl](https://lab.climet.eu/latest/repl).
-
-In fact, this laboratory is built using [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/), "a JupyterLab distribution that runs entirely in [your] browser" by leveraging WebAssembly. In other words, while you typically need to install JupyterLab on your own machine or connect to a server that executes your code, JupyterLite runs installation-free in your webbrowser and allows your code, data, and information to stay entirely on your machine. To run Python code within your browser, JupyterLite uses [Pyodide](https://pyodide.org/en/stable/), "a Python distribution for the browser [...] based on WebAssembly".
+If you are familiar with [JupyterLab](https://jupyter.org/), you should feel right at home with the user interface of this lab. In fact, this laboratory is built using [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/), "a JupyterLab distribution that runs entirely in [your] browser" by leveraging WebAssembly. In other words, while you typically need to install JupyterLab on your own machine or connect to a server that executes your code, JupyterLite runs installation-free in your webbrowser and allows your code, data, and information to stay entirely on your machine. To run Python code within your browser, JupyterLite uses [Pyodide](https://pyodide.org/en/stable/), "a Python distribution for the browser [...] based on WebAssembly".
 
 While Pyodide already supports an extensive list of scientific Python packages, which we have contributed to, this laboratory comes with additional packages that are commonly used in the weather and climate science community, including (but not limited to) `metpy`, `cfgrib`, `earthkit`, and `xeofs`.
 
 
 ## Getting Started
 
-To get started, click the blue `+` button in the top left to open a new launcher and create a new Python notebook from there. After the Python kernel has initialised, you can execute Python code in the cells of the notebook.
+To get started, go to [lab.climet.eu](https://lab.climet.eu), wait for the JupyterLab to load, and click the blue `+` button in the top left to open a new launcher and create a new Python notebook from there. After the Python kernel has initialised, you can execute Python code in the cells of the notebook.
 
 !!! tip
 

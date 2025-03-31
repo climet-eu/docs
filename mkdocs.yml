@@ -1,4 +1,4 @@
-site_name: climet.eu Documentation
+site_name: climet.eu Docs
 site_url: https://docs.climet.eu
 repo_url: https://github.com/climet-eu
 
@@ -43,7 +43,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Online Laboratory: lab.md
+  - Online Laboratory:
+    - Overview: lab/index.md
+    - Special URLs: lab/urls.md
   - Online Compression Laboratory: compression.md
 
 plugins:
