@@ -12,9 +12,9 @@
 
 <hr>
 
-- Open an existing [git repository][open-a-git-repository-in-the-online-laboratory] in the Online Laboratory for Climate Science and Meteorology
-- Open an existing [gist][open-a-gist-in-the-online-laboratory] in the Online Laboratory for Climate Science and Meteorology
-- Open an existing [file URL][open-a-file-url-in-the-online-laboratory] in the Online Laboratory for Climate Science and Meteorology
+- Open an existing [git repository](lab/urls/repo.md) in the Online Laboratory for Climate Science and Meteorology
+- Open an existing [gist](lab/urls/gist.md) in the Online Laboratory for Climate Science and Meteorology
+- Open an existing [file URL](lab/urls/https.md) in the Online Laboratory for Climate Science and Meteorology
 
 ## Funding
 
