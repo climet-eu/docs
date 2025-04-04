@@ -18,6 +18,7 @@
             <option value="v0.1">v0.1: v0.1.0</option>
             <option value="v0.1.0">v0.1.0</option>
         </optgroup>
+        <option value="main">Development: main</option>
     </select>
     <br/><br/>
     <label>Git repository host</label>

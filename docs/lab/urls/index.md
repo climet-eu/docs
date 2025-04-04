@@ -18,6 +18,7 @@ where
     - `v0.2.0`
     - `v0.1`: the latest version of the 0.1.x release stream, currently `v0.1.0`
     - `v0.1.0`
+    - `main`: the latest in-development version, fresh from the main branch
 
     The online lab follows semantic versioning, i.e. breaking changes to the lab and the packages it provides are only made in breaking releases. To ensure that your code works in the laboratory as expected, you should use one of the *.x release streams, e.g. `v0.1` or `v0.2`.
 
