@@ -12,7 +12,9 @@ The Online Laboratory for Climate Science and Meteorology, [lab.climet.eu](https
 where
 
 - `<version>` refers to one of the following published versions of the lab:
-    - `latest`: the latest published version, currently `v0.2.1`
+    - `latest`: the latest published version, currently `v0.3.0`
+    - `v0.3`: the latest version of the 0.3.x release stream, currently `v0.3.0`
+    - `v0.3.0`
     - `v0.2`: the latest version of the 0.2.x release stream, currently `v0.2.1`
     - `v0.2.1`
     - `v0.2.0`
@@ -20,7 +22,7 @@ where
     - `v0.1.0`
     - `main`: the latest in-development version, fresh from the main branch
 
-    The online lab follows semantic versioning, i.e. breaking changes to the lab and the packages it provides are only made in breaking releases. To ensure that your code works in the laboratory as expected, you should use one of the *.x release streams, e.g. `v0.1` or `v0.2`.
+    The online lab follows semantic versioning, i.e. breaking changes to the lab and the packages it provides are only made in breaking releases. To ensure that your code works in the laboratory as expected, you should use one of the `*.x` release streams, e.g. `v0.1`, `v0.2`, or `v0.3`.
 
 - `<org>` refers to the organisation / user that owns a GitHub / GitLab repository
 - `<repo>` refers to the name of the repository

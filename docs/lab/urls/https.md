@@ -3,11 +3,15 @@
 <div class="nice-form-group">
     <label>Online Laboratory version</label>
     <select id="lab-version" required>
-        <option value="latest">Latest: v0.2.1</option>
+        <option value="latest">Latest: v0.3.0</option>
+        <optgroup label="v0.3">
+            <option value="v0.3">v0.3: v0.3.0</option>
+            <option value="v0.3.0">v0.3.0</option>
+        </optgroup>
         <optgroup label="v0.2">
             <option value="v0.2">v0.2: v0.2.1</option>
             <option value="v0.2.1">v0.2.1</option>
-            <option value="v0.2.1">v0.2.0</option>
+            <option value="v0.2.0">v0.2.0</option>
         </optgroup>
         <optgroup label="v0.1">
             <option value="v0.1">v0.1: v0.1.0</option>
