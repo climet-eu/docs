@@ -52,6 +52,7 @@ nav:
           - Open a git repo: lab/urls/repo.md
           - Open a gist: lab/urls/gist.md
           - Open a file via URL: lab/urls/https.md
+      - Custom venv: lab/venv.md
       - Versions:
           - v0.2:
               - v0.2.1: lab/versions/v0.2.1.md

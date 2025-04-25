@@ -27,6 +27,9 @@
   const https_file = document.getElementById("https-file");
   const https_url = document.getElementById("https-url");
 
+  const searchParams = new URLSearchParams(window.location.search);
+  https_file.value = searchParams.get("file");
+
   function updateHttpsUrl() {
     let https_file_url;
     try {

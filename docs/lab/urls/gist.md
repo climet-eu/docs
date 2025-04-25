@@ -45,6 +45,11 @@
   const gist_url = document.getElementById("gist-url");
   const gist_preview = document.getElementById("gist-preview");
 
+  const searchParams = new URLSearchParams(window.location.search);
+  gist_org.value = searchParams.get("org");
+  gist_id.value = searchParams.get("id");
+  gist_path.value = searchParams.get("path");
+
   function updateGistUrl() {
     if (gist_org.value && gist_id.value && gist_path.value) {
       gist_url.href = `https://lab.climet.eu/${lab_version.value}/gist/${gist_host.value}/${gist_org.value}/${gist_id.value}/${gist_path.value}`;

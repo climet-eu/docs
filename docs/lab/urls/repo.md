@@ -56,6 +56,12 @@
   const repo_urls = [document.getElementById("repo-url-top"), document.getElementById("repo-url-bottom")];
   const repo_preview = document.getElementById("repo-preview");
 
+  const searchParams = new URLSearchParams(window.location.search);
+  repo_org.value = searchParams.get("org");
+  repo_name.value = searchParams.get("name");
+  repo_ref.value = searchParams.get("ref") || "HEAD";
+  repo_path.value = searchParams.get("path");
+
   function updateQuickUrl() {
     const url = parseGithubUrl(repo_quick.value);
 
