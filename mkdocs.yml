@@ -66,6 +66,8 @@ nav:
   - Online Compression Laboratory:
       - Overview: compression/index.md
       - Versions:
+          - v0.4:
+              - v0.4.0: compression/versions/v0.4.0.md
           - v0.3:
               - v0.3.0: compression/versions/v0.3.0.md
           - v0.2:
