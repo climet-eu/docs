@@ -8,10 +8,11 @@
     <br/><br/>
     <label>Online Laboratory version</label>
     <select id="lab-version" required>
-        <option value="latest">Latest: v0.4.0</option>
+        <option value="latest">Latest: v0.4.1</option>
         <optgroup label="v0.4">
-            <option value="v0.4">v0.4: v0.4.0</option>
+            <option value="v0.4">v0.4: v0.4.1</option>
             <option value="v0.4.0">v0.4.0</option>
+            <option value="v0.4.1">v0.4.1</option>
         </optgroup>
         <optgroup label="v0.3">
             <option value="v0.3">v0.3: v0.3.0</option>

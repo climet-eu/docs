@@ -12,8 +12,9 @@ The Online Laboratory for Climate Science and Meteorology, [lab.climet.eu](https
 where
 
 - `<version>` refers to one of the following published versions of the lab:
-    - `latest`: the latest published version, currently `v0.4.0`
-    - `v0.4`: the latest version of the 0.4.x release stream, currently `v0.4.0`
+    - `latest`: the latest published version, currently `v0.4.1`
+    - `v0.4`: the latest version of the 0.4.x release stream, currently `v0.4.1`
+    - `v0.4.1`
     - `v0.4.0`
     - `v0.3`: the latest version of the 0.3.x release stream, currently `v0.3.0`
     - `v0.3.0`
