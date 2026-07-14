@@ -1,0 +1,2205 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://docs.climet.eu/lab/versions/v0.4.0/">
+      
+      
+        <link rel="prev" href="../v0.4.1/">
+      
+      
+        <link rel="next" href="../v0.3.0/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../static/favicons/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>v0.4.0 - climet.eu Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+      <link rel="stylesheet" href="../../../css/nice-forms.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#v040" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="climet.eu Docs" class="md-header__button md-logo" aria-label="climet.eu Docs" data-md-component="logo">
+      
+  <img src="../../../static/favicons/esiwace.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            climet.eu Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              v0.4.0
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/climet-eu" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="climet.eu Docs" class="md-nav__button md-logo" aria-label="climet.eu Docs" data-md-component="logo">
+      
+  <img src="../../../static/favicons/esiwace.svg" alt="logo">
+
+    </a>
+    climet.eu Docs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/climet-eu" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Laboratory
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Online Laboratory
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Special URLs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Special URLs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../urls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../urls/repo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open a git repo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../urls/gist/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open a gist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../urls/https/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Open a file via URL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../venv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Custom venv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Versions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_1" id="__nav_2_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v0.4.2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.2
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v0.4.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.0
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changelog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changelog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyterlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JupyterLab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-installed-python-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-installed Python environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_2" id="__nav_2_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v0.3.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.3.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_3" id="__nav_2_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v0.2.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v0.2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_4_4" id="__nav_2_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../v0.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Online Compression Laboratory
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Online Compression Laboratory
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compression/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Versions
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Versions
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_1" id="__nav_3_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.4
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compression/versions/v0.4.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.4.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_2" id="__nav_3_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.3
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.3
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compression/versions/v0.3.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.3.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_3" id="__nav_3_2_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compression/versions/v0.2.1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.1
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compression/versions/v0.2.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2_4" id="__nav_3_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    v0.1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../compression/versions/v0.1.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    v0.1.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changelog" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Changelog
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Changelog">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Packages
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jupyterlab" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JupyterLab
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-installed-python-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-installed Python environment
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="v040">v0.4.0</h1>
+<ul>
+<li>Release on 12.05.2026</li>
+<li>GitHub release <a href="https://github.com/climet-eu/lab/releases/tag/v0.4.0">https://github.com/climet-eu/lab/releases/tag/v0.4.0</a></li>
+</ul>
+<h2 id="changelog">Changelog</h2>
+<h3 id="features">Features</h3>
+<ul>
+<li>Add support for automatically loading packages based on their entrypoints</li>
+<li>Produce an updated <code>requirements.txt</code> file when launching the laboratory with a custom Pyodide lock file</li>
+<li>Enable JupyterLite terminal based on <code>cockle</code></li>
+<li>Improve support for embedding in external documentation pages with extendable configurations, environment variables, and bootstrap code</li>
+<li>Upgrade Pyodide and JupyterLite</li>
+</ul>
+<h3 id="packages">Packages</h3>
+<ul>
+<li>Update the <code>numcodecs-wasm-*</code> family of packages, see <a href="https://numcodecs-wasm.readthedocs.io">https://numcodecs-wasm.readthedocs.io</a>, now including <code>-ebcc</code>, <code>-lc</code>, <code>-pressio</code>, <code>-qpet-sperr</code>, <code>-sperr</code>, and <code>-stochastic-rounding</code></li>
+<li>Add the <code>compression-safeguards</code>, <code>numcodecs-safeguards</code>, and <code>xarray-safeguards</code> packages</li>
+<li>Add the <code>earthkit-climate</code>, <code>earthkit-utils</code>, and <code>earthkit-workflows</code> packages but remove the top-level <code>earthkit</code> package</li>
+<li>Add the <code>annotated-doc</code>, <code>anywidget</code>, <code>arcosparse</code>, <code>argon2-cffi</code>, <code>argon2-cffi-bindings</code>, <code>arraypartition</code>, <code>arro3-compute</code>, <code>arro3-core</code>, <code>arro3-io</code>, <code>boto3</code>, <code>branca</code>, <code>cachetools</code>, <code>cf-python</code>, <code>cfapyx</code>, <code>cfdm</code>, <code>cfunits</code>, <code>copernicusmarine</code>, <code>cykhash</code>, <code>dahuffman</code>, <code>dill</code>, <code>ecmwf-datastores-client</code>, <code>fire</code>, <code>frozendict</code>, <code>geoarrow-rust-core</code>, <code>google-crc32c</code>, <code>hdf5plugin</code>, <code>humanize</code>, <code>ipyevents</code>, <code>ipyleaflet</code>, <code>ipympl</code>, <code>ipyspin</code>, <code>ipython-pygments-lexers</code>, <code>itables</code>, <code>jupyter-leaflet</code>, <code>leb128</code>, <code>libpysal</code>, <code>numcodecs-bitmap-index</code>, <code>numcodecs-delta</code>, <code>numcodecs-huffman</code>, <code>numcodecs-pw-ratio</code>, <code>numcodecs-replace</code>, <code>numcodecs-shuffle</code>, <code>numcodecs-tokenize</code>, <code>numcodecs-zero</code>, <code>numpy-quaddtype</code>, <code>objsize</code>, <code>odc-geo</code>, <code>odc-loader</code>, <code>odc-stac</code>, <code>polars</code>, <code>protobuf</code>, <code>psygnal</code>, <code>pyfive</code>, <code>pyrobuf</code>, <code>pyrosm</code>, <code>python-rapidjson</code>, <code>pyvis</code>, <code>pyzmq</code>, <code>qubed</code>, <code>rtree</code>, <code>s3transfer</code>, <code>semver</code>, <code>shellingham</code>, <code>sly</code>, <code>sortedcontainers</code>, <code>spglm</code>, <code>spint</code>, <code>spreg</code>, <code>termcolor</code>, <code>traittypes</code>, <code>typer</code>, <code>uritools</code>, <code>varint</code>, <code>xsdba</code>, <code>xyzservices</code>, and <code>zfpy</code> packages</li>
+<li>Remove the unsupported <code>pyfdb</code> package</li>
+<li>Pin the <code>setuptools</code> package to v80.10.2</li>
+<li>Upgrade <code>numpy</code> to v2.4.4</li>
+<li>Upgrade other packages</li>
+</ul>
+<h3 id="jupyterlab">JupyterLab</h3>
+<ul>
+<li>Add the <code>jupyterlab_myst</code> extension</li>
+<li>Disable the <code>jupyterlab-tour</code> extension</li>
+</ul>
+<h2 id="pre-installed-python-environment">Pre-installed Python environment</h2>
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%;"><span></span><code># ========== Online Laboratory for Climate Science and Meteorology =========== #
+#                                                                              #
+#                               requirements.txt                               #
+#                                                                              #
+#    This list contains the locked versions of all pre-installed packages.     #
+# ============================================================================ #
+
+# python == 3.13.2
+# abi == pyodide_2025_0
+
+adjustText == 1.3.0
+affine == 2.4.0
+aiobotocore == 3.4.0
+aiohappyeyeballs == 2.6.1
+aiohttp == 3.13.5
+aioitertools == 0.13.0
+aiosignal == 1.4.0
+annotated-doc == 0.0.4
+annotated-types == 0.7.0
+antlr4-python3-runtime == 4.13.2
+anywidget == 0.10.0
+arcosparse == 0.5.1
+argon2-cffi == 25.1.0
+argon2-cffi-bindings == 25.1.0
+argparse == 1.4.0
+array-api-compat == 1.14.0
+arraypartition == 1.2.0
+arro3-compute == 0.8.0
+arro3-core == 0.8.0
+arro3-io == 0.8.0
+asciitree == 0.3.3
+astropy == 7.2.0
+astropy-iers-data == 0.2026.4.6.0.54.57
+asttokens == 3.0.1
+async-timeout == 5.0.1
+attrs == 26.1.0
+beautifulsoup4 == 4.14.3
+blosc2 == 4.1.2
+boltons == 25.0.0
+boto3 == 1.42.84
+botocore == 1.42.84
+Bottleneck == 1.6.0
+branca == 0.8.2
+cachetools == 7.0.5
+Cartopy == 0.25.0
+cattrs == 26.1.0
+cdsapi == 0.7.7
+certifi == 2026.2.25
+cf-python == 3.19.0
+cf-units == 3.3.1
+cf_xarray == 0.10.11
+cfapyx == 2025.12.9
+cfdm == 1.13.0.0
+cffi == 2.0.0
+cfgrib == 0.9.15.1
+cftime == 1.6.5
+cfunits == 3.3.7
+charset-normalizer == 3.4.7
+click == 8.3.2
+click-plugins == 1.1.1.2
+cligj == 0.7.2
+cloudpickle == 3.1.2
+cmcrameri == 1.9
+cmocean == 4.0.3
+comm == 0.2.3
+compression-safeguards == 1.0.0b4
+conflator == 0.1.8
+contourpy == 1.3.3
+copernicusmarine == 2.4.0b2
+covjson-pydantic == 0.7.0
+covjsonkit == 0.2.15
+crc32c == 2.8
+cycler == 0.12.1
+cykhash == 2.0.1
+dahuffman == 0.4.2
+dask == 2026.3.0
+datapi == 0.4.0
+decorator == 5.2.1
+Deprecated == 1.3.1
+deprecation == 2.1.0
+dill == 0.4.1
+docstring_parser == 0.17.0
+donfig == 0.8.1.post1
+earthkit-climate == 0.3.1
+earthkit-data == 0.19.3
+earthkit-geo == 0.5.2
+earthkit-hydro == 1.2.0
+earthkit-meteo == 0.6.2
+earthkit-plots == 0.6.1
+earthkit-plots-default-styles == 0.1.3
+earthkit-regrid == 0.5.1
+earthkit-time == 0.1.8
+earthkit-transforms == 0.5.4
+earthkit-utils == 0.3.0
+earthkit-workflows == 0.9.0
+eccodes == 2.46.0
+ecmwf-api-client == 1.6.5
+ecmwf-datastores-client == 0.5.1
+ecmwf-opendata == 0.3.26
+entrypoints == 0.4
+executing == 2.2.1
+fastprogress == 1.0.5
+filelock == 3.25.2
+findlibs == 0.1.2
+fiona == 1.10.1
+fire == 0.7.1
+flexcache == 0.3
+flexparser == 0.4
+fonttools == 4.62.1
+frozendict == 2.4.7
+frozenlist == 1.8.0
+fsspec == 2026.3.0
+future == 1.0.0
+geoarrow-rust-core == 0.6.1
+geopandas == 1.1.3
+google-crc32c == 1.8.0
+gribscan == 0.0.16
+h5netcdf == 1.8.1
+h5py == 3.16.0
+hda == 2.39
+hdf5plugin == 6.0.0
+healpy == 1.19.0
+humanize == 4.15.0
+idna == 3.11
+ImageIO == 2.37.3
+iniconfig == 2.3.0
+intake == 2.0.9
+intake-esm == 2025.12.12
+intake-xarray == 2.0.0
+ipdb == 0.13.13
+ipyevents == 2.0.4
+ipyfilite == 0.1.30
+ipyleaflet == 0.20.0
+ipympl == 0.10.0
+ipyspin == 1.0.1
+ipython == 9.12.0
+ipython_pygments_lexers == 1.1.1
+ipywidgets == 8.1.8
+itables == 2.7.3
+jedi == 0.19.2
+Jinja2 == 3.1.6
+jmespath == 1.1.0
+joblib == 1.5.3
+jsonpickle == 4.1.1
+jsonschema == 4.26.0
+jsonschema-specifications == 2025.9.1
+jupyter-leaflet == 0.20.0
+jupyterlab_widgets == 3.0.16
+kerchunk == 0.2.10
+kiwisolver == 1.5.0
+lazy-loader == 0.5
+ldcpy == 0.20
+leb128 == 1.0.9
+legacy-cgi == 2.6.4
+libpysal == 4.14.1
+locket == 1.0.0
+lru-dict == 1.4.1
+lxml == 6.1.0
+lz4 == 4.4.5
+Markdown == 3.10.2
+markdown-it-py == 4.0.0
+MarkupSafe == 3.0.3
+matplotlib == 3.10.8
+matplotlib-inline == 0.2.1
+mdurl == 0.1.2
+MetPy == 1.7.1
+mpmath == 1.3.0
+msgpack == 1.1.2
+multidict == 6.7.1
+multiurl == 0.3.7
+narwhals == 2.19.0
+ndindex == 1.10.1
+netCDF4 == 1.7.2
+networkx == 3.6.1
+numba == 0.65.0
+numcodecs == 0.15.1
+numcodecs-bitmap-index == 0.1.2
+numcodecs-combinators == 0.2.15
+numcodecs-delta == 0.1.0
+numcodecs-huffman == 0.1.3
+numcodecs-observers == 0.1.2
+numcodecs-pw-ratio == 0.2.1
+numcodecs-replace == 0.1.2
+numcodecs-safeguards == 0.1.0b4
+numcodecs-shuffle == 0.1.0
+numcodecs-tokenize == 0.1.3
+numcodecs-zero == 0.1.2
+numcodecs_wasm == 0.2.4
+numcodecs_wasm_asinh == 0.4.0
+numcodecs_wasm_bit_round == 0.4.0
+numcodecs_wasm_ebcc == 0.1.1
+numcodecs_wasm_fixed_offset_scale == 0.4.0
+numcodecs_wasm_fourier_network == 0.3.0
+numcodecs_wasm_identity == 0.4.0
+numcodecs_wasm_jpeg2000 == 0.3.0
+numcodecs_wasm_lc == 0.1.0
+numcodecs_wasm_linear_quantize == 0.5.0
+numcodecs_wasm_log == 0.5.0
+numcodecs_wasm_pco == 0.3.0
+numcodecs_wasm_pressio == 0.1.0b1
+numcodecs_wasm_qpet_sperr == 0.2.2
+numcodecs_wasm_random_projection == 0.4.0
+numcodecs_wasm_reinterpret == 0.4.0
+numcodecs_wasm_round == 0.5.0
+numcodecs_wasm_sperr == 0.2.2
+numcodecs_wasm_stochastic_rounding == 0.2.0
+numcodecs_wasm_swizzle_reshape == 0.4.0
+numcodecs_wasm_sz3 == 0.8.4
+numcodecs_wasm_tthresh == 0.3.2
+numcodecs_wasm_uniform_noise == 0.4.0
+numcodecs_wasm_zfp == 0.6.0
+numcodecs_wasm_zfp_classic == 0.4.0
+numcodecs_wasm_zlib == 0.4.0
+numcodecs_wasm_zstd == 0.4.0
+numpy == 2.4.4
+numpy_quaddtype == 1.0.0
+objsize == 0.8.0
+odc-geo == 0.5.1
+odc-loader == 0.6.4
+odc-stac == 0.5.2
+orjson == 3.11.8
+packaging == 26.0
+pandas == 2.3.3
+parso == 0.8.6
+partd == 1.4.2
+patsy == 1.0.2
+pdbufr == 0.14.2
+pillow == 12.2.0
+Pint == 0.25.3
+pkgconfig == 1.6.0
+platformdirs == 4.9.4
+plotly == 6.6.0
+pluggy == 1.6.0
+polars == 1.32.3
+polytope-client == 0.7.9
+pooch == 1.9.0
+prompt_toolkit == 3.0.52
+propcache == 0.4.1
+protobuf == 7.34.1
+psygnal == 0.15.1
+pure_eval == 0.2.3
+pyarrow == 23.0.1
+pycparser == 3.0
+pydantic == 2.12.5
+pydantic_core == 2.41.5
+pydap == 3.5.9
+pyerfa == 2.0.1.5
+pyfive == 1.1.2
+Pygments == 2.20.0
+pyicon-diagnostics == 0.3.6
+pyodc == 1.5.0
+pyodide-unix-timezones == 1.0.0
+pyogrio == 0.12.1
+pyparsing == 3.3.2
+pyproj == 3.7.2
+pyrobuf == 0.9.3
+pyrosm == 0.6.2
+pyrsistent == 0.20.0
+pyshp == 3.0.3
+pystac == 1.14.3
+pytest == 9.0.3
+python-dateutil == 2.9.0.post0
+python-rapidjson == 1.23
+pytz == 2026.1.post1
+pyvis == 0.3.2
+PyYAML == 6.0.3
+pyzmq == 27.1.0
+qubed == 0.3.1
+rasterio == 1.5.0
+referencing == 0.37.0
+regex == 2026.4.4
+requests == 2.33.1
+requests-cache == 1.3.1
+rich == 14.3.3
+rich-argparse == 1.7.2
+rpds-py == 0.30.0
+rtree == 1.4.1
+s3fs == 2026.3.0
+s3transfer == 0.16.0
+scikit-image == 0.26.0
+scikit-learn == 1.8.0
+scipy == 1.17.0
+semver == 3.0.4
+setuptools == 80.10.2
+shapely == 2.1.2
+shellingham == 1.5.4
+six == 1.17.0
+sly == 0.5
+sortedcontainers == 2.4.0
+soupsieve == 2.8.3
+spglm == 1.1.0
+spint == 1.0.7
+spreg == 1.9.0
+stack-data == 0.6.3
+statsmodels == 0.14.6
+sympy == 1.14.0
+tblib == 3.2.2
+tenacity == 9.1.4
+termcolor == 3.3.0
+threadpoolctl == 3.6.0
+tifffile == 2026.3.3
+toolz == 1.1.0
+tqdm == 4.67.3
+traitlets == 5.14.3
+traittypes == 0.2.3
+typer == 0.24.1
+typing-inspection == 0.4.2
+typing_extensions == 4.15.0
+tzdata == 2026.1
+ujson == 5.12.0
+uncertainties == 3.2.3
+uritools == 6.0.1
+url-normalize == 2.2.1
+urllib3 == 2.7.0
+varint == 1.0.2
+wcwidth == 0.6.0
+WebOb == 1.8.9
+widgetsnbextension == 4.0.15
+wrapt == 2.1.2
+xarray == 2026.2.0
+xarray-safeguards == 0.1.0b4
+xclim == 0.60.0
+xeofs == 3.0.4
+xhistogram == 0.3.2
+xrft == 1.0.1
+xsdba == 0.5.0
+xyzservices == 2026.3.0
+yamale == 6.1.0
+yarl == 1.23.0
+zarr == 3.1.5
+zarr-any-numcodecs == 0.1.3
+zfpy == 1.0.1
+
+# system libraries
+
+# libaec == 1.1.3
+# libboost == 1.84.0
+# libcrc32c == 1.1.0
+# libeccodes == 2.46.0
+# libexpat == 2.6.3
+# libf2c == CLAPACK-3.2.1
+# libgdal == 3.8.3
+# libgeos == 3.12.1
+# libhdf5 == 1.14.3
+# libiconv == 1.16
+# liblzma == 5.2.2
+# libnetcdf == 4.9.2
+# libopenblas == 0.3.28
+# libopenssl == 1.1.1w
+# libproj == 9.6.2
+# libsleef == 3.9.0
+# libspatialindex == 2.1.0
+# libtiff == 4.4.0
+# libudunits2 == 2.2.28
+# libwebp == 1.2.2
+# libxml == 2.9.10
+# libxslt == 1.1.33
+# libyaml == 0.2.1
+# libzfp == 1.0.1
+# libzlib == 1.3.1
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": [], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../js/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+        <script src="../../../js/parse-github-url.js"></script>
+      
+    
+  </body>
+</html>
